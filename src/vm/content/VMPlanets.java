@@ -62,7 +62,6 @@ public class VMPlanets{
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
             iconColor = Color.valueOf("#464451");
             visible = true;
-            };
         }};
     }
 }
