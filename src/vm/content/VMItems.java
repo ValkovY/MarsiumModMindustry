@@ -8,12 +8,12 @@ public class VMItems {
 		niobium;
 
     public static void load() {
-        niobium = new Item("niobium", Color.valueOf("abcdef")) {{
+        niobium = new Item("item-niobium", Color.valueOf("abcdef")) {{
             radioactivity = 0.70f;
             cost = 2;
             charge = 0.04f;
             hardness = 5;
-            flammability = -0.10f;
+            flammability = 0.01f;
         }};
     }
 }
