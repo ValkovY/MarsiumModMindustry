@@ -11,6 +11,7 @@ import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
+import mindustry.maps.planet.*;
 
 public class VMPlanets{
 
@@ -18,7 +19,7 @@ public class VMPlanets{
 
     public static void load() {
         marsium = new Planet("marsium", Planets.sun, 1f, 3) {{
-            generator = new ErekirPlanetGenerator();
+            generator = new PlanetGenerator.ErekirPlanetGenerator();
             hasAtmosphere = true;
             meshLoader = () -> new MultiMesh(
                     new HexMesh(this, 4)
