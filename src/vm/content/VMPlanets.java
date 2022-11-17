@@ -7,6 +7,7 @@ import mindustry.graphics.g3d.*;
 import mindustry.type.Planet;
 import mindustry.world.meta.Attribute;
 import mindustry.content.Planets;
+import mindustry.content.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.meta.*;
@@ -16,7 +17,7 @@ public class VMPlanets{
     public static Planet marsium;
 
     public static void load() {
-        marsium = new Planet("marsium", sun, 1f, 3) {{
+        marsium = new Planet("marsium", Planets.sun, 1f, 3) {{
             generator = new ErekirPlanetGenerator();
             hasAtmosphere = true;
             meshLoader = () -> new MultiMesh(
