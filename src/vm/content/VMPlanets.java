@@ -15,7 +15,7 @@ import mindustry.maps.planet.*;
 
 public class VMPlanets{
 
-    public static Planet marsium;
+    public static Planet marsium, extinction;
 
     public static void load() {
         marsium = new Planet("marsium", Planets.sun, 1f, 2) {{
