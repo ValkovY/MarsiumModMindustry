@@ -12,7 +12,7 @@ public class VMPlanets{
     public static Planet marsium;
 
     public static void load() {
-        marsium = new VMPlanet("marsium", sun, 1f, 3) {{
+        marsium = new Planet("marsium", sun, 1f, 3) {{
             averageSurfaceTemperature = 200f;
             orbitRad = 446;
             generator = new ErekirPlanetGenerator();
@@ -24,7 +24,7 @@ public class VMPlanets{
             atmosphereColor = Color.valueOf("ffb02e");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
-            landCloudColor = Color.valueOf("#9f8170	");
+            landCloudColor = Color.valueOf("#9f8170");
             orbitRadius = 60f;
             startSector = 3;
             accessible = true;
