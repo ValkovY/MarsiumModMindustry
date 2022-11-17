@@ -52,7 +52,7 @@ public class VMPlanets{
             meshLoader = () -> new MultiMesh(
                     new HexMesh(this, 5)
             );
-            radius = 1f;
+            radius = 4f;
             allowSectorInvasion = false;
             startSector = 3;
             accessible = true;
