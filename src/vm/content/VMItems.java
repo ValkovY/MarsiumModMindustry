@@ -14,7 +14,6 @@ public class VMItems {
             charge = 0.04f;
             hardness = 5;
             flammability = -0.10f;
-            magnetic = 0.01f;
         }};
     }
 }
