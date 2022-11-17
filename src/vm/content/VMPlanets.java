@@ -39,6 +39,7 @@ public class VMPlanets{
             alwaysUnlocked = true;
             bloom = false;
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
+            icon = "marsium";
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
               r.attributes.set(Attribute.heat, -0.2f);
