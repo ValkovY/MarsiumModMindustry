@@ -23,5 +23,6 @@ public class MarsiumMod extends Mod {
 	@Override
 	public void loadContent() {
 		VMItems.load();
+		VMPlanets.load();
 	}
 }
