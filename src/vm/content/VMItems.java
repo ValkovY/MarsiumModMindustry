@@ -2,7 +2,6 @@ package vm.content;
 
 import arc.graphics.Color;
 import mindustry.type.Item;
-import vm.type.items.VMItem;
 
 public class VMItems {
 	public static Item
