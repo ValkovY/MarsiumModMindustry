@@ -25,16 +25,16 @@ public class VMPlanets{
                     new HexMesh(this, 6)
             );
              cloudMeshLoader = () -> new MultiMesh(
-                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("eba768").a(0.75f), 2, 0.42f, 1f, 0.43f),
-                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("d95030").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
+                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("#bc987e").a(0.75f), 2, 0.42f, 1f, 0.43f),
+                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#fcd975").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
             atmosphereColor = Color.valueOf("#f4a460");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
-            landCloudColor = Color.valueOf("#d95030");
-            orbitRadius = 70f;
-            startSector = 3;
+            landCloudColor = Color.valueOf("#cd7f32	");
+            orbitRadius = 64f;
+            startSector = 10;
             accessible = true;
             alwaysUnlocked = true;
             bloom = false;
