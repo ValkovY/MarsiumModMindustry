@@ -19,7 +19,7 @@ public class VMPlanets{
 
     public static void load() {
         marsium = new Planet("marsium", Planets.sun, 1f, 3) {{
-            generator = new PlanetGenerator.ErekirPlanetGenerator();
+            generator = new ErekirPlanetGenerator();
             hasAtmosphere = true;
             meshLoader = () -> new MultiMesh(
                     new HexMesh(this, 4)
