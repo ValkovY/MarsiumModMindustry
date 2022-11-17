@@ -15,7 +15,7 @@ import mindustry.maps.planet.*;
 
 public class VMPlanets{
 
-    public static Planet marsium, extinction;
+    public static Planet marsium;
 
     public static void load() {
         marsium = new Planet("marsium", Planets.sun, 1f, 2) {{
@@ -46,20 +46,6 @@ public class VMPlanets{
               r.coreCapture = true;
               r.coreIncinerates = false;
             };
-        }};
-        extinction = new Planet("extinction", marsium, 1f, 0) {{
-            hasAtmosphere = false;
-            meshLoader = () -> new MultiMesh(
-                    new HexMesh(this, 5)
-            );
-            radius = 4f;
-            allowSectorInvasion = false;
-            startSector = 3;
-            accessible = true;
-            alwaysUnlocked = true;
-            bloom = false;
-            orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
-            visible = true;
         }};
     }
 }
