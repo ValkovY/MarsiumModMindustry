@@ -18,7 +18,7 @@ public class VMPlanets{
     public static Planet marsium, extinction;
 
     public static void load() {
-        marsium = new Planet("marsium", Planets.sun, 1f, 2) {{
+        marsium = new Planet("marsium", Planets.sun, 2f, 2) {{
             generator = new ErekirPlanetGenerator();
             hasAtmosphere = true;
             meshLoader = () -> new MultiMesh(
@@ -33,7 +33,7 @@ public class VMPlanets{
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C34D0A");
-            orbitRadius = 90f;
+            orbitRadius = 45f;
             startSector = 10;
             accessible = true;
             alwaysUnlocked = true;
@@ -48,12 +48,12 @@ public class VMPlanets{
               r.coreIncinerates = false;
             };
         }};
-        extinction = new Planet("extinction", marsium, 10f, 1) {{
+        extinction = new Planet("extinction", marsium, 0.5f, 1) {{
             hasAtmosphere = false;
             meshLoader = () -> new MultiMesh(
-                    new HexMesh(this, 6)
+                    new HexMesh(this, 5)
             );
-            generator = new ErekirPlanetGenerator();
+            generator = new AsteroidGenerator();
             startSector = 1;
             accessible = true;
             alwaysUnlocked = true;
