@@ -46,19 +46,10 @@ public class MarsiumPlanetGenerator extends PlanetGenerator{
             };
             
        @Override
-    public float getHeight(Vec3 position){
-        return Mathf.pow(rawHeight(position), heightPow) * heightMult;
-    }
-
-    @Override
-    public Color getColor(Vec3 position){
+        public Color getColor(Vec3 position){
         Block block = getBlock(position);
-
-        //more obvious color
-        if(block == Blocks.crystallineStone) block = Blocks.crystalFloor;
-        //TODO this might be too green
-        //if(block == Blocks.beryllicStone) block = Blocks.arkyicStone;
-
-        return Tmp.c1.set(block.mapColor).a(1f - block.albedo);
+        float tnoise = 1f;
+        
+        return Tmp.c1.set(block.mapColor).mul(tnoise).a(1f - block.albedo);
     }
 }
