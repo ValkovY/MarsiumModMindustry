@@ -44,11 +44,11 @@ public class MarsiumPlanetGenerator extends PlanetGenerator{
                     {Blocks.snow, Blocks.ice, Blocks.iceSnow, Blocks.snow, Blocks.snow, Blocks.snow, Blocks.ice, Blocks.redIce, Blocks.redIce, Blocks.redIce}
             };
             
-       @Override
-        public Color getColor(Vec3 position){
-        Block block = getBlock(position);
-        float tnoise = 1f;
+            @Override
+            public Color getColor(Vec3 position){
+                    Block block = getBlock(position);
+                    float tnoise = 1f;
         
-        return Tmp.c1.set(block.mapColor).mul(tnoise).a(1f - block.albedo);
+                    return Tmp.c1.set(block.mapColor).mul(tnoise).a(1f - block.albedo);
     }
 }
