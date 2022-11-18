@@ -3,17 +3,16 @@ package vm.planets;
 import arc.graphics.*;
 import arc.math.*;
 import arc.math.geom.*;
-import arc.struct.*;
 import arc.util.*;
 import arc.util.noise.*;
 import mindustry.ai.*;
 import mindustry.content.*;
 import mindustry.game.*;
-import mindustry.graphics.g3d.*;
 import mindustry.maps.generators.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.environment.*;
+import mindustry.world.meta.*;
 
 import static mindustry.Vars.*;
 import static mindustry.content.Blocks.*;
