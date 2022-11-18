@@ -41,5 +41,5 @@ public class MarsiumModGenerator extends PlanetGenerator {
                     {Blocks.redStone, Blocks.redIce, Blocks.ice, Blocks.redIce, Blocks.redStone, Blocks.redStone, Blocks.redStone, Blocks.redIce, Blocks.redStone, Blocks.redStone},
                     {Blocks.ice, Blocks.iceSnow, Blocks.iceSnow, Blocks.snow, Blocks.snow, Blocks.redIce, Blocks.redIce, Blocks.redIce, Blocks.redIce, Blocks.redStone},
                     {Blocks.snow, Blocks.ice, Blocks.iceSnow, Blocks.snow, Blocks.snow, Blocks.snow, Blocks.ice, Blocks.redIce, Blocks.redIce, Blocks.redIce}
-            }
+            };
 }
