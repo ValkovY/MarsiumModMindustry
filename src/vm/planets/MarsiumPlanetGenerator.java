@@ -18,7 +18,7 @@ import mindustry.world.blocks.environment.*;
 import static mindustry.Vars.*;
 import static mindustry.content.Blocks.*;
 
-public static MarsiumModGenerator extends PlanetGenerator {
+public class MarsiumModGenerator extends PlanetGenerator {
     //alternate, less direct generation (wip)
     public static boolean alt = false;
     static final int seed = 1;
