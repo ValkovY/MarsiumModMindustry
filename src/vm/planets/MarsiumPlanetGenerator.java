@@ -19,10 +19,12 @@ import static mindustry.Vars.*;
 import static mindustry.content.Blocks.*;
 
 public class MarsiumPlanetGenerator extends PlanetGenerator{
-    //alternate, less direct generation (wip)
-    public static boolean alt = false;
-    static final int seed = 1;
-    final Color borudaMidColor = new Color();
+    
+    static final int seed = 100;
+
+    BaseGenerator basegen = new BaseGenerator();
+    float scl = 5f;
+    float oceansOffset = 0.04f;
 
     //^ EQUATOR
     //                  <- LOW                   HIGH ->
