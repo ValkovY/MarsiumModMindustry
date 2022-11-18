@@ -25,21 +25,21 @@ public class VMPlanets{
                     new HexMesh(this, 6)
             );
              cloudMeshLoader = () -> new MultiMesh(
-                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("#bc987e").a(0.75f), 2, 0.42f, 1f, 0.43f),
-                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#ea7e5d").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
+                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("#BC987E").a(0.75f), 2, 0.42f, 1f, 0.43f),
+                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#EA7E5D").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
-            atmosphereColor = Color.valueOf("c34d0a");
+            atmosphereColor = Color.valueOf("C34D0A");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
-            landCloudColor = Color.valueOf("#c34d0a");
+            landCloudColor = Color.valueOf("#C34D0A");
             orbitRadius = 90f;
             startSector = 10;
             accessible = true;
             alwaysUnlocked = true;
             bloom = false;
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
-            icon = "marsium";
+            iconColor = Color.valueOf("#9B2D30");
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
               r.attributes.set(Attribute.heat, -0.2f);
@@ -48,14 +48,18 @@ public class VMPlanets{
               r.coreIncinerates = false;
             };
         }};
-        extinction = new Planet("extinction", marsium, 10f, 0) {{
+        extinction = new Planet("extinction", marsium, 10f, 1) {{
             hasAtmosphere = false;
             meshLoader = () -> new MultiMesh(
-                    new HexMesh(this, 4)
+                    new HexMesh(this, 6)
             );
-            accessible = false;
+            generator = new ErekirPlanetGenerator();
+            startSector = 1;
+            accessible = true;
             alwaysUnlocked = true;
             bloom = false;
+            icon = "extinction";
+            iconColor = Color.valueOf("#7A7666");
         }};
     }
 }
