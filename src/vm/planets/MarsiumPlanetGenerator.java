@@ -1,4 +1,4 @@
-package vm.planets;
+//package vm.planets;
 
 import arc.graphics.*;
 import arc.math.*;
