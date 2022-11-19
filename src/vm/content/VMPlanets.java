@@ -29,7 +29,7 @@ public class VMPlanets{
                 new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#EA7E5D").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
-            atmosphereColor = Color.valueOf("C34D0A");
+            atmosphereColor = Color.valueOf("#FF0033");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C34D0A");
@@ -40,6 +40,8 @@ public class VMPlanets{
             bloom = false;
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
             iconColor = Color.valueOf("#9B2D30");
+            defaultCore = Blocks.coreBastion;
+            hiddenItems.addAll(Items.serpuloItems).removeAll(Items.erekirItems);
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
               r.attributes.set(Attribute.heat, -0.2f);
