@@ -18,7 +18,7 @@ public class VMPlanets{
     public static Planet marsium, extinction;
 
     public static void load() {
-        marsium = new Planet("marsium", Planets.sun, 2f, 2) {{
+        marsium = new Planet("marsium", Planets.sun, 1f, 2) {{
             generator = new ErekirPlanetGenerator();
             hasAtmosphere = true;
             meshLoader = () -> new MultiMesh(
@@ -51,9 +51,9 @@ public class VMPlanets{
         extinction = new Planet("extinction", marsium, 0.5f, 1) {{
             hasAtmosphere = false;
             meshLoader = () -> new MultiMesh(
-                    new HexMesh(this, 5)
+                    new HexMesh(this, 4)
             );
-            generator = new AsteroidGenerator();
+            generator = new ErekirPlanetGenerator();
             startSector = 1;
             accessible = true;
             alwaysUnlocked = true;
