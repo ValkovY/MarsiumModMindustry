@@ -12,7 +12,6 @@ import mindustry.gen.Icon;
 import mindustry.mod.Mod;
 import mindustry.mod.Mods.LoadedMod;
 import vm.content.*;
-import vm.planets.*;
 
 import java.util.Random;
 
