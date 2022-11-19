@@ -52,3 +52,4 @@ public class MarsiumPlanetGenerator extends PlanetGenerator{
                     return Tmp.c1.set(block.mapColor).mul(tnoise).a(1f - block.albedo);
     }
 }
+*/
