@@ -18,7 +18,7 @@ public class VMTechTree{
 
     public static void load(){
         Planets.marsium.techTree = nodeRoot("marsium", coreBastion, () -> {
-            nodeProduce(Items.niobium, () -> {
+            nodeProduce(niobium, () -> {
             });
         });
     }
