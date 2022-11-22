@@ -24,5 +24,6 @@ public class MarsiumMod extends Mod {
 	public void loadContent() {
 		VMItems.load();
 		VMPlanets.load();
+		VMTechTree.load();
 	}
 }
