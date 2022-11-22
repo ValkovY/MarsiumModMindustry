@@ -13,6 +13,7 @@ import static mindustry.content.Blocks.*;
 import static mindustry.content.SectorPresets.*;
 import static mindustry.content.TechTree.*;
 import static vm.content.VMItems.*;
+import static vm.content.VMPlanets.*;
 
 public class VMTechTree{
 
