@@ -5,7 +5,7 @@ import mindustry.type.Item;
 
 public class VMItems {
 	public static Item
-		niobium;
+		niobium, redGround;
 
     public static void load() {
         niobium = new Item("niobium", Color.valueOf("879aa1")) {{
