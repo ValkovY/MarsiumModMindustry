@@ -25,12 +25,13 @@ public class VMPlanets{
                 this, 6,
                 5, 0.3, 1.7, 1.2, 1,
                 1.1f,
-                Color.valueOf("F4A460"),
-                Color.valueOf("D5713F"),
-                Color.valueOf("CD7F32"),
-                Color.valueOf("C34D0A"),
-                Color.valueOf("B15124"),
-                Color.valueOf("BC5D58")
+                Color.valueOf("#C04000"),
+                Color.valueOf("#C93C20"),
+                Color.valueOf("#CD5700"),
+                Color.valueOf("#E56A10"),
+                Color.valueOf("#E9873F"),
+                Color.valueOf("#755A57"),
+                Color.valueOf("#79553D")
             );
             //meshLoader = () -> new MultiMesh(
                     //new HexMesh(this, 6)
@@ -40,7 +41,7 @@ public class VMPlanets{
                 new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#EA7E5D").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
-            atmosphereColor = Color.valueOf("#FF0033");
+            atmosphereColor = Color.valueOf("#CD5700");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C34D0A");
