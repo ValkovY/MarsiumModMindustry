@@ -3,6 +3,7 @@ package vm.content;
 import arc.graphics.*;
 import arc.struct.*;
 import mindustry.type.*;
+import mindustry.type.item;
 
 public class VMItems {
 	public static Item
