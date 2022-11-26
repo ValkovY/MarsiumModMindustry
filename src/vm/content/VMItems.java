@@ -8,7 +8,7 @@ public class VMItems {
 	public static Item
 		niobium, redGround;
 	
-	public static final Seq<Item> marsiumItems = new Seq<>(), marsiumOnlyItems = new Seq<>();
+	public static final Seq<Item> marsiumItems = new Seq<>(), erekirItems = new Seq<>();
 
 	public static void load() {
         niobium = new Item("niobium", Color.valueOf("879aa1")) {{
@@ -28,7 +28,7 @@ public class VMItems {
         }};
 		
 	marsiumItems.addAll(
-        niobium, redGround, tungsten
+        niobium, redGround
         );
 
         marsiumOnlyItems.addAll(marsiumItems).removeAll(erekirItems);
