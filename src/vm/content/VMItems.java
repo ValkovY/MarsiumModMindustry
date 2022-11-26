@@ -6,8 +6,10 @@ import mindustry.type.Item;
 public class VMItems {
 	public static Item
 		niobium, redGround;
+	
+	public static final Seq<Item> marsiumItems = new Seq<>(), marsiumOnlyItems = new Seq<>();
 
-    public static void load() {
+	public static void load() {
         niobium = new Item("niobium", Color.valueOf("879aa1")) {{
             radioactivity = 0.70f;
             cost = 2;
@@ -23,5 +25,12 @@ public class VMItems {
             hardness = 1;
             flammability = 0f;
         }};
+		
+	marsiumItems.addAll(
+        niobium, redGround, tungsten
+        );
+
+        marsiumOnlyItems.addAll(marsiumItems).removeAll(serpuloItems).removeAll(erekirItems);
+
     }
 }
