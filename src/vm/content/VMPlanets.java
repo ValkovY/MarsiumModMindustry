@@ -55,7 +55,7 @@ public class VMPlanets{
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
             iconColor = Color.valueOf("#9B2D30");
             defaultCore = Blocks.coreBastion;
-            hiddenItems.addAll(Items.serpuloItems).addAll(Items.erekirItems).removeAll(Items.marsiumItems);
+            hiddenItems.addAll(Items.serpuloItems).addAll(Items.erekirItems).removeAll(marsiumItems);
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
               r.attributes.set(Attribute.heat, -0.2f);
