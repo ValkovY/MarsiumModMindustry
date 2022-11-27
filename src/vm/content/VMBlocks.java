@@ -46,8 +46,8 @@ public class VMBlocks{
     redGround,
       
     //ores
-    oreNiobium,
-
+    oreNiobium
+    
     ;
 
     public static void load(){
