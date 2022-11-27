@@ -25,7 +25,7 @@ public class VMPlanets{
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
                 this, 6,
-                5, 0.3, 5, 1.2, 5,
+                5, 0.3, 1.7, 1.2, 1,
                 1.1f,
                 Color.valueOf("#480607"),
                 Color.valueOf("#9B2D30"),
