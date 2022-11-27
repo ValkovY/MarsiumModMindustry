@@ -4,6 +4,8 @@ import arc.graphics.*;
 import arc.struct.*;
 import mindustry.type.*;
 
+import static mindustry.type.ItemStack.*;
+
 public class VMItems {
 	public static Item
 		niobium, redGround;
