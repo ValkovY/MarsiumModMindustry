@@ -4,7 +4,7 @@ import mindustry.type.*;
 
 import static vm.content.VMPlanets.*;
 
-public class SectorPresets{
+public class VMSectorPresets{
     public static SectorPreset
     marsiumTest;
 
