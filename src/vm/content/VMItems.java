@@ -31,7 +31,7 @@ public class VMItems {
         niobium, redGround
         );
 
-        marsiumOnlyItems.addAll(marsiumItems).removeAll(erekirItems).removeAll(serpuloItems);
+        marsiumOnlyItems.addAll(marsiumItems).removeAll(erekirItems);
 
     }
 }
