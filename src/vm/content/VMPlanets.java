@@ -27,13 +27,13 @@ public class VMPlanets{
                 this, 6,
                 5, 0.3, 1.7, 1.2, 1,
                 1.1f,
-                Color.valueOf("#C04000"),
-                Color.valueOf("#C93C20"),
+                Color.valueOf("#480607"),
+                Color.valueOf("#9B2D30"),
                 Color.valueOf("#CD5700"),
-                Color.valueOf("#E56A10"),
-                Color.valueOf("#E9873F"),
-                Color.valueOf("#E07C1A"),
-                Color.valueOf("#CD7F32")
+                Color.valueOf("#B15124"),
+                Color.valueOf("#E38E4F"),
+                Color.valueOf("#EAA76C"),
+                Color.valueOf("#F7CBA4")
             );
             //meshLoader = () -> new MultiMesh(
                     //new HexMesh(this, 6)
