@@ -17,7 +17,7 @@ public class VMSectorPresets{
             captureWave = 10;
             difficulty = 1;
             overrideLaunchDefaults = true;
-            noLighting = true;
+            noLighting = false;
             startWaveTimeMultiplier = 3f;
         }};
     }
