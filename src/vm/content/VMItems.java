@@ -28,7 +28,7 @@ public class VMItems {
         }};
 		
 	marsiumItems.addAll(
-        niobium, redGround
+        niobium, redGround, Items.titanium
         );
 
         marsiumOnlyItems.addAll(marsiumItems).removeAll(erekirItems);
