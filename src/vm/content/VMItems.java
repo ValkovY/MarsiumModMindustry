@@ -3,6 +3,7 @@ package vm.content;
 import arc.graphics.*;
 import arc.struct.*;
 import mindustry.type.*;
+import mindustry.content.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -30,7 +31,7 @@ public class VMItems {
         }};
 		
 	marsiumItems.addAll(
-        niobium, redGround, Items.titanium
+        niobium, redGround, Items.tungsten
         );
 
         marsiumOnlyItems.addAll(marsiumItems).removeAll(erekirItems);
