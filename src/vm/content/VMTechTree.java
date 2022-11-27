@@ -21,6 +21,8 @@ public class VMTechTree{
         marsium.techTree = nodeRoot("marsium", coreBastion, () -> {
             nodeProduce(niobium, () -> {
             });
+            nodeProduce(redGround, () -> {
+            });
         });
     }
 }
