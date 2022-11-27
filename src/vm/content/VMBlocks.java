@@ -43,7 +43,7 @@ public class VMBlocks{
     public static Block
 
     //environment
-    redGround,
+    redSand,
       
     //ores
     oreNiobium
