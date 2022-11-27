@@ -26,5 +26,6 @@ public class MarsiumMod extends Mod {
 		VMPlanets.load();
 		VMTechTree.load();
 		VMSectorPresets.load();
+		VMBlocks.load();
 	}
 }
