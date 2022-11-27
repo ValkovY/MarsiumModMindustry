@@ -13,6 +13,8 @@ import mindustry.world.*;
 import mindustry.world.meta.*;
 import mindustry.maps.planet.*;
 
+import static vm.content.VMItems.*;
+
 public class VMPlanets{
 
     public static Planet marsium, extinction;
