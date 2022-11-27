@@ -54,7 +54,7 @@ public class VMBlocks{
       
       //region environment
       
-       redGround = new Floor("red-ground"){{
+       redSand = new Floor("red-sand"){{
             itemDrop = redGround;
             playerUnmineable = true;
         }};
