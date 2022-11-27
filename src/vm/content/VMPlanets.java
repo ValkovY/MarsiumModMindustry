@@ -50,6 +50,7 @@ public class VMPlanets{
             orbitRadius = 45f;
             startSector = 10;
             accessible = true;
+            updateLighting = true;
             alwaysUnlocked = true;
             bloom = false;
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
