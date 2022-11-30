@@ -57,14 +57,14 @@ public class VMBlocks{
        redSand = new Floor("red-sand"){{
            itemDrop = redGround;
            playerUnmineable = true;
-           variants: 5;
+           variants = 5;
         }};
       
        //region environment
       
        oreNiobium = new OreBlock(niobium){{
            oreDefault = true;
-           variants: 1;
+           variants = 1;
         }};
     }
 }
