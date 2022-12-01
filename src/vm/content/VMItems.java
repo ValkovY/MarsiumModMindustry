@@ -16,7 +16,7 @@ public class VMItems {
 	public static void load() {
         niobium = new Item("niobium", Color.valueOf("879aa1")) {{
             radioactivity = 0.70f;
-            cost = 0.7;
+            cost = 0.7f;
             charge = 0.04f;
             hardness = 1;
             flammability = 0.01f;
@@ -24,7 +24,7 @@ public class VMItems {
 	
 	molybdenum = new Item("molybdenum", Color.valueOf("8c7ea6")) {{
             radioactivity = 0f;
-            cost = 1.2;
+            cost = 1.2f;
             charge = 0f;
             hardness = 3;
             flammability = 0.15f;
