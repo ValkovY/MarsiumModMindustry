@@ -64,7 +64,7 @@ public class VMBlocks{
       
        oreNiobium = new OreBlock(niobium){{
            oreDefault = true;
-           variants = 1;
+           variants = 3;
         }};
     }
 }
