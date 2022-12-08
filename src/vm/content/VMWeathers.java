@@ -13,8 +13,7 @@ public class VMWeathers{
 
     public static void load(){
         redSandstorm = new ParticleWeather("redSandstorm"){{
-            pcolor = Color.valueOf("F4A560");
-            noiseColor = Color.valueOf("CF8B53");
+            noiseColor = Color.valueOf("F4A560");
             particleRegion = "particle";
             drawNoise = true;
             useWindVector = true;
