@@ -7,7 +7,7 @@ import mindustry.type.*;
 import mindustry.type.weather.*;
 import mindustry.world.meta.*;
 
-public class Weathers{
+public class VMWeathers{
     public static Weather
     redSandstorm;
 
