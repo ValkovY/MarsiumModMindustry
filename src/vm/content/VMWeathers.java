@@ -13,24 +13,23 @@ public class VMWeathers{
 
     public static void load(){
         redSandstorm = new ParticleWeather("redSandstorm"){{
-            noiseColor = Color.valueOf("F4A560");
+            color = noiseColor = Color.valueOf("F4A560");
             particleRegion = "particle";
             drawNoise = true;
             useWindVector = true;
-            sizeMax = 150f;
-            sizeMin = 50f;
+            sizeMax = 100f;
+            sizeMin = 25f;
             minAlpha = 0f;
             maxAlpha = 0.2f;
-            density = 2000f;
-            baseSpeed = 7f;
-            attrs.set(Attribute.light, -0.5f);
-            attrs.set(Attribute.water, -0.5f);
+            density = 4000f;
+            baseSpeed = 5f;
+            attrs.set(Attribute.light, -0.3f);
+            attrs.set(Attribute.water, -0.1f);
             opacityMultiplier = 0.35f;
-            force = 0.5f;
+            force = 0.7f;
             sound = Sounds.wind;
             soundVol = 0.8f;
             duration = 7f * Time.toMinutes;
-            statusGround = false;
         }};
     }
 }
