@@ -46,23 +46,24 @@ public class VMBlocks{
     redSand,
       
     //ores
-    oreNiobium
+    oreNiobium, oreMolybdenum
     
     ;
 
     public static void load(){
       
-      //region environment
+        //region environment
       
-       redSand = new Floor("red-sand"){{
-           itemDrop = redGround;
-           playerUnmineable = true;
+        redSand = new Floor("red-sand"){{
            variants = 8;
         }};
       
-       //region environment
+        //region ores
       
-       oreNiobium = new OreBlock(niobium){{
+        oreNiobium = new OreBlock(niobium){{
+           variants = 3;
+        }};
+        oreMolybdenum = new OreBlock(molybdenum){{
            variants = 3;
         }};
     }
