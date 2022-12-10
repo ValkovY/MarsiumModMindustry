@@ -57,7 +57,8 @@ public class VMBlocks{
         redSand = new Floor("red-sand"){{
            variants = 8;
            albedo = 0.5f;
-           cacheLayer = CacheLayer.mud;
+           layer = floor;
+           blendGroup = placement;
         }};
         
         redGround = new Floor("red-ground"){{
