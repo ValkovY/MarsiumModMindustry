@@ -57,13 +57,12 @@ public class VMBlocks{
       
         redSand = new Floor("red-sand"){{
            variants = 8;
-           albedo = 0.5f;
-           layer = 0;
-           blendGroup = stone;
+           albedo = 0.9f;
         }};
         
         redGround = new Floor("red-ground"){{
            variants = 3;
+           albedo = 0.9f;
         }};
       
         //region ores
