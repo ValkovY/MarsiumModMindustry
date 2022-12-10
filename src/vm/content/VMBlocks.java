@@ -36,6 +36,7 @@ import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
+
 import static vm.content.VMItems.*;
 import static mindustry.type.ItemStack.*;
 
@@ -57,8 +58,8 @@ public class VMBlocks{
         redSand = new Floor("red-sand"){{
            variants = 8;
            albedo = 0.5f;
-           layer = floor;
-           blendGroup = placement;
+           layer = 0;
+           blendGroup = stone;
         }};
         
         redGround = new Floor("red-ground"){{
