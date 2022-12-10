@@ -58,6 +58,7 @@ public class VMBlocks{
         redSand = new Floor("red-sand"){{
            variants = 8;
            albedo = 0.9f;
+           supportsOverlay = true;
         }};
         
         redGround = new Floor("red-ground"){{
