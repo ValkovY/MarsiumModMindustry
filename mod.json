@@ -4,8 +4,8 @@
   "author": "ValkovY",
   "main": "vm.MarsiumMod",
   "subtitle": "Where is it located?",
-  "description": "Java mod for Industry on v7.",
-  "version": "0.1",
+  "description": "Java mod for Mindustry on v7.",
+  "version": "0.2",
   "minGameVersion": 140,
   "hidden": "false"
 }
