@@ -82,7 +82,7 @@ public class VMPlanets{
         }};
         
         cyron = new Planet("cyron", Planets.sun, 1, 2) {{
-            localizedName = "Cyron"
+            localizedName = "Cyron";
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
                 this, 5,
