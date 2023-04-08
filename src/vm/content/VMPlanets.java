@@ -82,7 +82,7 @@ public class VMPlanets{
             iconColor = Color.valueOf("#7A7666");
         }};
         
-        cyron = new Planet("cyron", Planets.sun, 2, 3) {{
+        cyron = new Planet("cyron", Planets.sun, 1f, 2) {{
             localizedName = "Cyron";
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
@@ -109,11 +109,11 @@ public class VMPlanets{
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C9D6DF");
             orbitRadius = 90f;
-            startSector = 7;
+            startSector = 18;
             accessible = true;
             updateLighting = true;
             alwaysUnlocked = true;
-            bloom = true;
+            bloom = false;
             iconColor = Color.valueOf("#B9D7EA");
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
