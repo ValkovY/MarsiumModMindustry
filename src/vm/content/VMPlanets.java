@@ -82,7 +82,7 @@ public class VMPlanets{
             iconColor = Color.valueOf("#7A7666");
         }};
         
-        cyron = new Planet("cyron", Planets.sun, 1f, 2) {{
+        cyron = new Planet("cyron", Planets.sun, 2, 3) {{
             localizedName = "Cyron";
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
@@ -100,11 +100,11 @@ public class VMPlanets{
                     //new HexMesh(this, 6)
             //);
              cloudMeshLoader = () -> new MultiMesh(
-                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("#C9D6DF").a(0.75f), 2, 0.42f, 1f, 0.43f),
-                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#7c95a6").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
+                new HexSkyMesh(this, 3, 0.15f, 0.14f, 5, Color.valueOf("#C9D6DF").a(0.75f), 2, 0.42f, 1f, 0.43f),
+                new HexSkyMesh(this, 4, 0.6f, 0.15f, 5, Color.valueOf("#88abc2").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
-            atmosphereColor = Color.valueOf("#b6bbbfb7");
+            atmosphereColor = Color.valueOf("#374857");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C9D6DF");
@@ -113,7 +113,7 @@ public class VMPlanets{
             accessible = true;
             updateLighting = true;
             alwaysUnlocked = true;
-            bloom = false;
+            bloom = true;
             iconColor = Color.valueOf("#B9D7EA");
             ruleSetter = r -> {
               r.waveTeam = Team.blue;
