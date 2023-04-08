@@ -82,7 +82,7 @@ public class VMPlanets{
             iconColor = Color.valueOf("#7A7666");
         }};
         
-        cyron = new Planet("cyron", Planets.sun, 1f, 2) {{
+        cyron = new Planet("cyron", Planets.sun, 3, 2) {{
             localizedName = "Cyron";
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
