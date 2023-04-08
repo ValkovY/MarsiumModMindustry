@@ -68,6 +68,7 @@ public class VMPlanets{
         }};
         
         extinction = new Planet("extinction", marsium, 0.5f, 1) {{
+            localizedName = "Extinction";
             hasAtmosphere = false;
             meshLoader = () -> new MultiMesh(
                     new HexMesh(this, 4)
@@ -81,7 +82,7 @@ public class VMPlanets{
             iconColor = Color.valueOf("#7A7666");
         }};
         
-        cyron = new Planet("cyron", Planets.sun, 1, 2) {{
+        cyron = new Planet("cyron", Planets.sun, 1f, 2) {{
             localizedName = "Cyron";
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
@@ -89,21 +90,21 @@ public class VMPlanets{
                 5, 0.3, 1.7, 1.2, 1,
                 1.1f,
                 Color.valueOf("#C9D6DF"),
-                Color.valueOf("#BCCBD2"),
-                Color.valueOf("#CD5700"),
+                Color.valueOf("#a4b5bd"),
+                Color.valueOf("#8ba4b0"),
                 Color.valueOf("#7E8E95"),
-                Color.valueOf("#52616B"),
-                Color.valueOf("#485661")
+                Color.valueOf("#5d6b75"),
+                Color.valueOf("#546775")
             );
             //meshLoader = () -> new MultiMesh(
                     //new HexMesh(this, 6)
             //);
              cloudMeshLoader = () -> new MultiMesh(
-                new HexSkyMesh(this, 2, 0.15f, 0.14f, 5, Color.valueOf("#C9D6DF").a(0.75f), 2, 0.42f, 1f, 0.43f),
-                new HexSkyMesh(this, 3, 0.6f, 0.15f, 5, Color.valueOf("#52616B").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
+                new HexSkyMesh(this, 1, 0.15f, 0.14f, 5, Color.valueOf("#C9D6DF").a(0.75f), 2, 0.42f, 1f, 0.43f),
+                new HexSkyMesh(this, 2, 0.6f, 0.15f, 5, Color.valueOf("#7c95a6").a(0.75f), 2, 0.42f, 1.2f, 0.45f)
             );
             allowSectorInvasion = false;
-            atmosphereColor = Color.valueOf("#C9D6DF");
+            atmosphereColor = Color.valueOf("#b6bbbfb7");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
             landCloudColor = Color.valueOf("#C9D6DF");
